@@ -29,24 +29,38 @@ body{
     box-shadow:0 5px 25px rgba(0,0,0,0.15);
 }
 
-/* Banner */
-
 .header-banner{
     width:100%;
-    height:auto;
     display:block;
-    background:white;
 }
-
-/* Main Content */
 
 .section{
     padding:30px;
 }
 
-/* Verification Box */
+.heading{
+    margin:25px 0 15px;
+    color:#2f3b52;
+    border-bottom:2px solid #ddd;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+.certificate{
+    text-align:center;
+}
+
+.certificate img{
+    width:100%;
+    max-width:750px;
+    height:auto;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
 
 .verify-box{
+    margin-top:30px;
     background:#ecf9ee;
     border-left:6px solid #28a745;
     padding:20px;
@@ -56,20 +70,17 @@ body{
 .verify-box h2{
     color:#28a745;
     margin-bottom:10px;
-    font-size:32px;
 }
 
 .badge{
     display:inline-block;
     background:#28a745;
     color:white;
-    padding:6px 14px;
+    padding:5px 12px;
     border-radius:20px;
     font-size:14px;
     margin-left:10px;
 }
-
-/* Verification Details */
 
 .info-box{
     margin-top:20px;
@@ -80,18 +91,6 @@ body{
     line-height:1.8;
 }
 
-/* Headings */
-
-.heading{
-    margin-top:35px;
-    margin-bottom:15px;
-    color:#2f3b52;
-    border-bottom:2px solid #ddd;
-    padding-bottom:10px;
-}
-
-/* Table */
-
 table{
     width:100%;
     border-collapse:collapse;
@@ -100,7 +99,6 @@ table{
 td{
     padding:14px;
     border-bottom:1px solid #e5e5e5;
-    word-break:break-word;
 }
 
 td:first-child{
@@ -108,34 +106,6 @@ td:first-child{
     background:#fafafa;
     font-weight:bold;
 }
-
-/* Certificate */
-
-.certificate{
-    text-align:center;
-    margin-top:30px;
-}
-
-.certificate img{
-    width:100%;
-    max-width:650px;
-    height:auto;
-    border:1px solid #ccc;
-    border-radius:6px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Security Notice */
-
-.notice{
-    margin-top:30px;
-    background:#fff7e6;
-    border-left:5px solid #f0ad4e;
-    padding:15px;
-    line-height:1.7;
-}
-
-/* Footer */
 
 .footer{
     margin-top:40px;
@@ -157,13 +127,6 @@ td:first-child{
         padding:20px;
     }
 
-    .verify-box h2{
-        font-size:26px;
-    }
-
-    .heading{
-        font-size:26px;
-    }
 }
 
 /* Mobile */
@@ -176,22 +139,6 @@ td:first-child{
 
     .section{
         padding:15px;
-    }
-
-    .verify-box{
-        padding:15px;
-    }
-
-    .verify-box h2{
-        font-size:22px;
-        line-height:1.4;
-    }
-
-    .badge{
-        display:block;
-        width:max-content;
-        margin-top:10px;
-        margin-left:0;
     }
 
     table,
@@ -207,38 +154,13 @@ td:first-child{
         border-bottom:none;
     }
 
-    td{
-        padding:10px;
+    .badge{
+        display:block;
+        width:max-content;
+        margin-top:10px;
+        margin-left:0;
     }
 
-    .heading{
-        font-size:22px;
-    }
-
-    .info-box{
-        font-size:14px;
-    }
-
-    .footer{
-        font-size:14px;
-    }
-}
-
-/* Small Phones */
-
-@media (max-width:480px){
-
-    .verify-box h2{
-        font-size:18px;
-    }
-
-    .heading{
-        font-size:20px;
-    }
-
-    body{
-        padding:5px;
-    }
 }
 
 </style>
@@ -252,6 +174,13 @@ td:first-child{
     <img src="banner.png" class="header-banner" alt="Enovate Technologies">
 
     <div class="section">
+
+        <!-- Certificate -->
+        <h2 class="heading">Internship Certificate</h2>
+
+        <div class="certificate">
+            <img src="certificate.png" alt="Certificate">
+        </div>
 
         <!-- Verification Status -->
         <div class="verify-box">
@@ -267,7 +196,10 @@ td:first-child{
 
         </div>
 
-        <!-- Verification Information -->
+        <!-- Verification Details -->
+
+        <h2 class="heading">Verification Details</h2>
+
         <div class="info-box">
 
             <strong>Verification Reference:</strong>
@@ -286,14 +218,13 @@ td:first-child{
             <br>
 
             <strong>Verification Date:</strong>
-            28 May 2026
+            30 April 2026
 
         </div>
 
         <!-- Candidate Information -->
-        <h2 class="heading">
-            Candidate Information
-        </h2>
+
+        <h2 class="heading">Candidate Information</h2>
 
         <table>
 
@@ -319,12 +250,12 @@ td:first-child{
 
             <tr>
                 <td>Internship Period</td>
-                <td>27 April 2026 – 27 May 2026</td>
+                <td>01 April 2026 – 30 April 2026</td>
             </tr>
 
             <tr>
                 <td>Issue Date</td>
-                <td>28 May 2026</td>
+                <td>30 April 2026</td>
             </tr>
 
             <tr>
@@ -339,31 +270,10 @@ td:first-child{
 
         </table>
 
-        <!-- Certificate Preview -->
-        <div class="certificate">
-
-            <h2 class="heading">
-                Original Certificate Preview
-            </h2>
-
-            <img src="certificate.png" alt="Certificate" loading="lazy">
-
-        </div>
-
-        <!-- Security Notice -->
-        <div class="notice">
-
-            <strong>Security Notice</strong>
-
-            <br><br>
-
-            This verification record confirms that the credential listed above is recorded in the Enovate Technologies internship credential verification system.
-
-        </div>
-
     </div>
 
     <!-- Footer -->
+
     <div class="footer">
 
         <h3>Enovate Technologies</h3>
